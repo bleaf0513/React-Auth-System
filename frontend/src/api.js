@@ -1,5 +1,4 @@
 import axios from "axios";
-import React from "react";
 
 const API = axios.create({
     baseURL:"http://localhost:5000/api",
