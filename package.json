@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "prepare-db": "mkdir -p C:/data/db && mongod --dbpath C:/data/db",
     "start": "npm run prepare-db & nodemon server.js",
