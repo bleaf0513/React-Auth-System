@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "prepare-db": "mkdir -p C:/data/db && mongod --dbpath C:/data/db",
+    "start": "npm run prepare-db & nodemon server.js",
     "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
