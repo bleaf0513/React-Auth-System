@@ -4,7 +4,16 @@ const cors = require("cors");
 const connectDB = require("./config/db");
 const routes = require("./routes");
 
+
+const envFile =
+  process.env.NODE_ENV === "production"
+    ? ".env.production"
+    : ".env.development";
+
+    dotenv.config({ path: envFile });
+
 dotenv.config();
+
 connectDB();
 
 const app = express();
